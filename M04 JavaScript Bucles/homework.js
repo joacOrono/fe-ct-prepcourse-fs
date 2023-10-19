@@ -126,6 +126,16 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna false.
    // Tu código:
+   if (num % 3 === 0 && num % 5 === 0) {
+      return "fizzbuzz";
+  } else if (num % 3 === 0) {
+      return "fizz";
+  } else if (num % 5 === 0) {
+      return "buzz";
+  } else {
+      return false;
+  }
+
   
 }
 
@@ -158,7 +168,10 @@ function esPrimo(num) {
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
    
+   
 }
+   
+
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
@@ -175,7 +188,11 @@ function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
    // Tu código:
-   
+   var numero = num.toString();
+   if(numero.length === 3){
+      return true;
+   } else {
+      return false}
    
 }
 
@@ -184,11 +201,13 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
-   
+   var numero = 0
    do{
-      num + 5 == num;
-      return num
-   } while(num < 45)
+      num += 5;
+      numero++;
+      
+   }while(numero < 8)
+   return num;
    
 }
 
